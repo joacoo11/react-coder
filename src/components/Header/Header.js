@@ -1,19 +1,19 @@
 import React from 'react'
 import logo from '../../assets/logo.png'
-import cart from '../../assets/cart.png'
-import './Header.css'
+import CartWidget from './CartWidget'
 
 function Header() {
   return (
     <header style={style.header}>
         <img style={style.imgStyle} src={logo} alt='logo' />
         <nav style={style.navStyle}>
-            <a style={style.anchors} href="">Store</a>
-            <a style={style.anchors} href="">IPhone</a>
-            <a style={style.anchors} href="">IPad</a>
-            <a style={style.anchors} href="">MacBook</a>
+            <a style={style.anchors} href="/">Store</a>
+            <a style={style.anchors} href="/">IPhone</a>
+            <a style={style.anchors} href="/">IPad</a>
+            <a style={style.anchors} href="/">MacBook</a>
         </nav>
-        <img style={style.imgStyle} src={cart} alt='cart'/>
+        <CartWidget />
+        
        
     </header>
   )
@@ -44,6 +44,4 @@ const style = {
         margin: '10px',
         color:'#00000'
     },
-    
-    
 }
